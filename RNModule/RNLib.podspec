@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/betinafarias/rnworkspace.git", :tag => "#{spec.version}" }
 
 
-  spec.source_files  = "Sources", "Sources/**/*.{swift,h,m}"
+  spec.source_files  = "Sources", "ios/RNLib/Sources/**/*.{swift,h,m}"
 
 
   spec.dependency 'FBLazyVector'
