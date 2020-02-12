@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <React/RCTRootView.h>
 
 //! Project version number for RNLib.
 FOUNDATION_EXPORT double RNLibVersionNumber;

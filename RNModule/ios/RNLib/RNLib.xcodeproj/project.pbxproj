@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0E365A0123F376280004EC5F /* RNLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3659F723F376280004EC5F /* RNLib.framework */; };
 		0E365A0623F376280004EC5F /* RNLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E365A0523F376280004EC5F /* RNLibTests.swift */; };
 		0E365A0823F376280004EC5F /* RNLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E3659FA23F376280004EC5F /* RNLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E365A1323F379320004EC5F /* RNModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E365A1223F379320004EC5F /* RNModule.swift */; };
+		3C37038D310E9A0D2579CA0C /* Pods_RNLibTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1D11CC6EF30CCE624308C2 /* Pods_RNLibTests.framework */; };
+		825F4FFFD7BDC0B692A863F1 /* Pods_RNLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8365E93D88472F1CC350990A /* Pods_RNLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,13 @@
 		0E365A0023F376280004EC5F /* RNLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E365A0523F376280004EC5F /* RNLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNLibTests.swift; sourceTree = "<group>"; };
 		0E365A0723F376280004EC5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E365A1223F379320004EC5F /* RNModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNModule.swift; sourceTree = "<group>"; };
+		27518F9A87BB505F74578E96 /* Pods-RNLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNLib.release.xcconfig"; path = "Target Support Files/Pods-RNLib/Pods-RNLib.release.xcconfig"; sourceTree = "<group>"; };
+		27B7B4268D57AC72C7D0BE94 /* Pods-RNLibTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNLibTests.debug.xcconfig"; path = "Target Support Files/Pods-RNLibTests/Pods-RNLibTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E1D11CC6EF30CCE624308C2 /* Pods_RNLibTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNLibTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8365E93D88472F1CC350990A /* Pods_RNLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9664552AE05225FBA7C17FED /* Pods-RNLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNLib.debug.xcconfig"; path = "Target Support Files/Pods-RNLib/Pods-RNLib.debug.xcconfig"; sourceTree = "<group>"; };
+		F1D874540322C59286252151 /* Pods-RNLibTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNLibTests.release.xcconfig"; path = "Target Support Files/Pods-RNLibTests/Pods-RNLibTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825F4FFFD7BDC0B692A863F1 /* Pods_RNLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E365A0123F376280004EC5F /* RNLib.framework in Frameworks */,
+				3C37038D310E9A0D2579CA0C /* Pods_RNLibTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,9 +65,11 @@
 		0E3659ED23F376280004EC5F = {
 			isa = PBXGroup;
 			children = (
-				0E3659F923F376280004EC5F /* RNLib */,
+				0E3659F923F376280004EC5F /* Sources */,
 				0E365A0423F376280004EC5F /* RNLibTests */,
 				0E3659F823F376280004EC5F /* Products */,
+				4D62B521B6C832FFDFBC7826 /* Pods */,
+				BDEA843274670EE71B3A2C46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,13 +82,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0E3659F923F376280004EC5F /* RNLib */ = {
+		0E3659F923F376280004EC5F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0E365A1223F379320004EC5F /* RNModule.swift */,
 				0E3659FA23F376280004EC5F /* RNLib.h */,
 				0E3659FB23F376280004EC5F /* Info.plist */,
 			);
-			path = RNLib;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		0E365A0423F376280004EC5F /* RNLibTests */ = {
@@ -84,6 +99,27 @@
 				0E365A0723F376280004EC5F /* Info.plist */,
 			);
 			path = RNLibTests;
+			sourceTree = "<group>";
+		};
+		4D62B521B6C832FFDFBC7826 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9664552AE05225FBA7C17FED /* Pods-RNLib.debug.xcconfig */,
+				27518F9A87BB505F74578E96 /* Pods-RNLib.release.xcconfig */,
+				27B7B4268D57AC72C7D0BE94 /* Pods-RNLibTests.debug.xcconfig */,
+				F1D874540322C59286252151 /* Pods-RNLibTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		BDEA843274670EE71B3A2C46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8365E93D88472F1CC350990A /* Pods_RNLib.framework */,
+				3E1D11CC6EF30CCE624308C2 /* Pods_RNLibTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +140,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E365A0B23F376280004EC5F /* Build configuration list for PBXNativeTarget "RNLib" */;
 			buildPhases = (
+				50FDF541DCF7628DAB0E9763 /* [CP] Check Pods Manifest.lock */,
 				0E3659F223F376280004EC5F /* Headers */,
 				0E3659F323F376280004EC5F /* Sources */,
 				0E3659F423F376280004EC5F /* Frameworks */,
@@ -122,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E365A0E23F376280004EC5F /* Build configuration list for PBXNativeTarget "RNLibTests" */;
 			buildPhases = (
+				BAE5CB013C7DD51511B1F937 /* [CP] Check Pods Manifest.lock */,
 				0E3659FC23F376280004EC5F /* Sources */,
 				0E3659FD23F376280004EC5F /* Frameworks */,
 				0E3659FE23F376280004EC5F /* Resources */,
+				93064431E594D9A2BFD12626 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +187,7 @@
 				TargetAttributes = {
 					0E3659F623F376280004EC5F = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					0E3659FF23F376280004EC5F = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -190,11 +230,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		50FDF541DCF7628DAB0E9763 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93064431E594D9A2BFD12626 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNLibTests/Pods-RNLibTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNLibTests/Pods-RNLibTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNLibTests/Pods-RNLibTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAE5CB013C7DD51511B1F937 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNLibTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0E3659F323F376280004EC5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E365A1323F379320004EC5F /* RNModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,13 +444,15 @@
 		};
 		0E365A0C23F376280004EC5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9664552AE05225FBA7C17FED /* Pods-RNLib.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RNLib/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -355,6 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.natura.minegocionatura.RNLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -362,13 +470,15 @@
 		};
 		0E365A0D23F376280004EC5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27518F9A87BB505F74578E96 /* Pods-RNLib.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RNLib/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,7 +495,9 @@
 		};
 		0E365A0F23F376280004EC5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27B7B4268D57AC72C7D0BE94 /* Pods-RNLibTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RNLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -402,7 +514,9 @@
 		};
 		0E365A1023F376280004EC5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D874540322C59286252151 /* Pods-RNLibTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RNLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
