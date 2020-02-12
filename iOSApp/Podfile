@@ -1,0 +1,8 @@
+source 'https://github.com/iossocket/ReactNativeLib.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'MyApp' do
+  use_frameworks!
+
+  pod 'RNLib', :path => '../RNModule/ios/RNLib'
+end
